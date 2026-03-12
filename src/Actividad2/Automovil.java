@@ -20,6 +20,8 @@ public class Automovil {
 //		modelo = "Z3";
 //		nombreDueño = "Chepe";
 //	}
+	
+	
 
 	public void llenarTanque() {
 		estaVacio = false;
@@ -51,10 +53,15 @@ public class Automovil {
 
 	}
 
-	public String mostrarDatos() {
+	public String toString() {
 		return "Automovil [marca=" + marca + ", modelo=" + modelo + ", nombreDueño=" + nombreDueño + ", estaEncendido="
 				+ estaEncendido + ", estaAbierto=" + estaAbierto + ", estaVacio=" + estaVacio + ", kilometraje="
 				+ kilometraje + ", nivelCombustible=" + nivelCombustible + "]";
+	}
+	
+	public void mostrarDatos() {
+		System.out.println(toString());
+		
 	}
 
 	public void abiertaPuertas() {
@@ -62,10 +69,6 @@ public class Automovil {
 			;
 		estaAbierto = true;
 		System.out.println("Puertas abiertas");
-	} else {
-		System.out.println("Puertas cerradas");
 	}
 
 	}
-
-
